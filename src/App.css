@@ -1,38 +1,115 @@
+/* General Styling for the App */
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
+  color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+nav button:hover {
+  background-color: #0056b3;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 20px;
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Styling for the Tree Visualization */
+.tree {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.treeNode {
+  margin: 10px;
+  padding: 10px;
+  background-color: #61dafb;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.treeNode:hover {
+  background-color: #007bff;
+}
+
+.treeNode span {
+  font-size: 18px;
+}
+
+/* Graph Visualization */
+.graph-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.graph-buttons {
+  margin: 20px;
+}
+
+.graph-buttons button {
+  margin: 10px;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.graph-buttons button:hover {
+  background-color: #218838;
+}
+
+.graph-output {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.graph-output h3 {
+  color: #ffc107;
+}
+
+.graph-output p {
+  font-size: 16px;
+  color: #17a2b8;
 }
