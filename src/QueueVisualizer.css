@@ -1,0 +1,43 @@
+.queue-visualizer {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .queue-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .queue-item {
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .controls {
+    margin-top: 20px;
+  }
+  
+  input {
+    padding: 8px;
+    margin-right: 10px;
+    width: 150px;
+  }
+  
+  button {
+    padding: 10px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
